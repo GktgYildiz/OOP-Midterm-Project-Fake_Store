@@ -1,3 +1,4 @@
+//shop.js
 import ProductList from "./productList.js";
 import ShoppingCart from "./shoppingCart.js";
 

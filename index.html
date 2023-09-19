@@ -3,12 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mini-Shop</title>
-    <link rel="stylesheet" href="assets/styles/app.css">
-  </head> 
+    <link
+      rel="shortcut icon"
+      href="./assets/styles/images/deadfishlogo.png"
+      type="image/x-icon"
+    />
+    <title>DeadFish-Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
   <body>
+    <section class="navbar-container">
+      <div class="navbar">
+        <a class="active" href="#"
+          ><img src="./assets/styles/images/deadfishlogo.png" alt="logo"
+        /></a>
+        <a href="#" id="navbar-mid">JUST BUY IT!</a>
+        <a href="#">
+          <div class="navbar-cart">
+            <p class="navbar-cart-item">0</p>
+            <img src="./assets/styles/images/addtocart.svg" alt="cart" />
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="category-container">
+      <h1>OUR CATEGORIES</h1>
+      <div class="category-cards">
+        <div class="category-cards-1 choose-category">
+          <h2>Women</h2>
+        </div>
+        <div class="category-cards-2 choose-category">
+          <h2>Men</h2>
+        </div>
+        <div class="category-cards-3 choose-category">
+          <h2>Jewelery</h2>
+        </div>
+        <div class="category-cards-4 choose-category">
+          <h2>Electronic</h2>
+        </div>
+      </div>
+    </section>
+    <section class="section-break">
+      <h1><img src="./assets/styles/images/deadfishlogo.png" /></h1>
+    </section>
+    <section class="product-container">
+      <h1 id="product-headline">ALL PRODUCTS</h1>
+      <div class="product-cards"></div>
+    </section>
     <div id="app"></div>
+    <script type="module" src="assets/scripts/app.js" defer></script>
+    <script type="module" src="assets/scripts/product.js" defer></script>
+    <script type="module" src="assets/scripts/productItem.js" defer></script>
+    <script type="module" src="assets/scripts/productList.js" defer></script>
+    <script type="module" src="assets/scripts/shop.js" defer></script>
+    <script type="module" src="assets/scripts/shoppingCart.js" defer></script>
   </body>
-  <script type="module" src="assets/scripts/app.js" defer></script>
 </html>

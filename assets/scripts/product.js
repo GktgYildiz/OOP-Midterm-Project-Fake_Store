@@ -1,3 +1,4 @@
+//product.js
 class Product {
   constructor(id, title, price, description, category, image) {
     this.id = id;

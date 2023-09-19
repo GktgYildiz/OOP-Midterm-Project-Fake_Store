@@ -1,3 +1,4 @@
+import Product from "./product.js";
 import ProductItem from "./productItem";
 class ProductList {
   constructor() {

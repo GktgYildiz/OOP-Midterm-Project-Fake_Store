@@ -55,8 +55,8 @@ body {
 }
 
 .choose-category {
-  height: 320px;
-  width: 400px;
+  height: 250px;
+  width: 300px;
   border-radius: 1.25em;
   display: flex;
   justify-content: flex-end;
@@ -74,6 +74,13 @@ body {
   font-family: "Anton", sans-serif;
   font-size: 3em;
   line-height: 0.5em;
+}
+
+#product-headline {
+  font-family: "Anton", sans-serif;
+  font-size: 3em;
+  line-height: 0.5em;
+  margin: 0.5em 1.5em;
 }
 
 .category-cards {
@@ -134,12 +141,86 @@ body {
   gap: 1em;
   margin: 1em 2em;
 }
-.product-cards img {
-  height: 100px;
-}
 
 .product-item {
   display: grid;
   justify-items: center;
-  border: 2px solid goldenrod;
+  border-radius: 2em;
+  background-color: #c9eeec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.product-image-frame {
+  margin-top: 2em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 2em;
+  background-color: white;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-image-frame img {
+  width: 55%;
+}
+
+.product-title {
+  padding: 0 em 1.25em;
+  word-wrap: break-word;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.product-category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75em;
+}
+.product-category img {
+  height: 20px;
+}
+.product-category-text {
+  line-height: 0%;
+}
+
+.product-line {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.product-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  align-content: center;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+.product-price-image {
+  height: 28px;
+}
+.product-price-text {
+  color: #1b1587;
+  font-weight: bold;
+  letter-spacing: 0.125em;
+}
+
+.product-addToCart {
+  position: relative;
+  padding: 0.5em;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 50%;
+  height: 28px;
+  left: 2em;
 }/*# sourceMappingURL=style.css.map */

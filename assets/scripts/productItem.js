@@ -6,6 +6,9 @@ class ProductItem {
   addToCart() {}
 
   render() {
+    const capitalizedCategory =
+      this.product.category.charAt(0).toUpperCase() +
+      this.product.category.slice(1);
     const productElement = document.createElement("div");
     productElement.classList.add(`product-item`);
     productElement.classList.add(`product-item-${this.product.id}`);
@@ -17,15 +20,18 @@ class ProductItem {
       <h3 class='product-title' >${this.product.title}</h3>
       <div class='product-category'> 
         <img class='product-category-image' src='../assets/styles/images/category.png' />
-        <p class='product-category-text' >${this.product.category}</p>
+        <p class='product-category-text' >${capitalizedCategory}</p>
       </div>
-      <hr/>
-      <div class='product-price'> 
+      <hr class='product-line'>
+      <div class='product-bottom'>
+        <div class='product-price'> 
+          <img class='product-price-image' src='../assets/styles/images/pricetag.png' />
+          <p class='product-price-text' >  $${this.product.price}</p>
+        </div>
+         <img class='product-addToCart'src='../assets/styles/images/addtocart.svg'>
+     
+      </div>
       
-      <img class='product-price-image' src='../assets/styles/images/pricetag.png' />
-      <p class='product-price' >  $${this.product.price}</p>
-    </div>
-      <button class='product-addToCart'>Add to Cart</button>
     `;
     // <p class='product-description'>Description: ${this.product.description}</p>
 

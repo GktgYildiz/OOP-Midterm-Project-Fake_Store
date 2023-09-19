@@ -1,9 +1,13 @@
 class ProductItem {
-  constructor(product) {
+  constructor(product, cart) {
     this.product = product;
+    this.cart = cart;
   }
 
-  addToCart() {}
+  addToCart() {
+    this.cart.addProduct(this.product);
+    console.log(this.cart);
+  }
 
   render() {
     const capitalizedCategory =
@@ -29,12 +33,12 @@ class ProductItem {
           <p class='product-price-text' >  $${this.product.price}</p>
         </div>
          <img class='product-addToCart'src='../assets/styles/images/addtocart.svg'>
-     
       </div>
-      
     `;
     // <p class='product-description'>Description: ${this.product.description}</p>
 
+    const addtocartButton = productElement.querySelector(".product-addToCart");
+    addtocartButton.addEventListener("click", () => this.addToCart());
     return productElement;
   }
 }

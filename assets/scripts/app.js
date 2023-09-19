@@ -8,12 +8,9 @@ class App {
     shop.render();
   }
 
-  static addProductToCart(product) {
-    // call this method to add the product to the cart
-  }
+  static addProductToCart(product) {}
 }
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM content loaded"); // Add this line
   const app = new App();
   app.init();
 });

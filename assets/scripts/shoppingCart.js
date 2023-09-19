@@ -38,6 +38,7 @@ class ShoppingCart {
       return total + item.product.price * item.quantity;
     }, 0);
   }
+  render() {}
 }
 
 export default ShoppingCart;

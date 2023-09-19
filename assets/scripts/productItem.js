@@ -11,10 +11,20 @@ class ProductItem {
     productElement.classList.add(`product-item-${this.product.id}`);
 
     productElement.innerHTML = `
-      <img class='product-image' src="${this.product.image}" alt="${this.product.title}" />
+      <div class='product-image-frame'> 
+        <img class='product-image' src="${this.product.image}" alt="${this.product.title}" />
+      </div>
       <h3 class='product-title' >${this.product.title}</h3>
-      <p class='product-price' >Price: $${this.product.price}</p>
-      <p class='product-category' >Category: ${this.product.category}</p>
+      <div class='product-category'> 
+        <img class='product-category-image' src='../assets/styles/images/category.png' />
+        <p class='product-category-text' >${this.product.category}</p>
+      </div>
+      <hr/>
+      <div class='product-price'> 
+      
+      <img class='product-price-image' src='../assets/styles/images/pricetag.png' />
+      <p class='product-price' >  $${this.product.price}</p>
+    </div>
       <button class='product-addToCart'>Add to Cart</button>
     `;
     // <p class='product-description'>Description: ${this.product.description}</p>

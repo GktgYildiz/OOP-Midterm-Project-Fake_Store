@@ -1,0 +1,145 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container {
+  margin: 0em 2em;
+  padding: 1em 2em;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #b5e85d;
+  overflow: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  padding: 0.75em 2em;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar img {
+  height: 2.5em;
+  padding-right: 2em;
+}
+.navbar-cart {
+  position: relative;
+}
+.navbar-cart-item {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2em 0.5em;
+  font-size: 14px;
+}
+
+#navbar-mid {
+  font-size: 2em;
+  line-height: 0em;
+  font-family: "Anonymous Pro", monospace;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 0.125em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.choose-category {
+  height: 320px;
+  width: 400px;
+  border-radius: 1.25em;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-indent: 2em;
+  letter-spacing: 0.125em;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1em 4em;
+}
+.category-container h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 3em;
+  line-height: 0.5em;
+}
+
+.category-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.category-cards h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+  color: wheat;
+  text-shadow: 3px 4px 9px rgba(0, 0, 0, 0.5);
+}
+.category-cards-1 {
+  background: url("./images/women.png") no-repeat;
+  background-size: 100%;
+}
+.category-cards-2 {
+  background: url("./images/men.png") no-repeat;
+  background-size: 100%;
+}
+.category-cards-3 {
+  background: url("./images/jewelery.png") no-repeat;
+  background-size: 100%;
+}
+.category-cards-4 {
+  background: url("./images/electronics.png") no-repeat;
+  background-size: 100%;
+}
+
+.section-break {
+  margin-top: 6em;
+}
+.section-break h1 {
+  display: flex;
+  flex-direction: row;
+}
+.section-break h1:before,
+.section-break h1:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid rgb(181, 232, 93);
+  margin: 1em 1em;
+}
+.section-break img {
+  height: 50px;
+  width: 100px;
+  margin: 0em 0.25em;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  margin: 1em 2em;
+}
+.product-cards img {
+  height: 100px;
+}
+
+.product-item {
+  display: grid;
+  justify-items: center;
+  border: 2px solid goldenrod;
+}/*# sourceMappingURL=style.css.map */

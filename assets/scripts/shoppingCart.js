@@ -247,6 +247,7 @@ class ShoppingCart {
 
 const shoppingCart = new ShoppingCart();
 const sidePanel = document.querySelector(".side-panel");
+const sidePanelItem = document.querySelector(".side-panel-item");
 const sidePanelContent = document.querySelector(".side-panel-content");
 const stickyOffset = 100;
 
@@ -255,11 +256,18 @@ const stickyOffset = 100;
 
 // Add a click event listener to the sidePanel element
 sidePanel.addEventListener("click", () => {
-  shoppingCart.updateSidePanel();
+  // shoppingCart.updateSidePanel();
   // shoppingCart.initSidePanelContent();
 
   sidePanel.style.height = "auto";
   sidePanelContent.style.display = "block";
+  sidePanelContent.style.maxHeight = "400px";
+
+  // Select all side-panel-item elements and change their display to flex
+  const sidePanelItems = document.querySelectorAll(".side-panel-item");
+  sidePanelItems.forEach((item) => {
+    item.style.display = "flex";
+  });
 });
 
 window.addEventListener("scroll", () => {

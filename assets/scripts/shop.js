@@ -6,7 +6,7 @@ class Shop {
     const shoppingCart = new ShoppingCart();
     const productList = new ProductList(shoppingCart);
     productList.fetchProducts();
-    productList.render();
+    productList.renderProducts();
     shoppingCart.render();
   }
 }

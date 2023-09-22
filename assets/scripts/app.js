@@ -1,7 +1,7 @@
 //app.js
-
+import Product from "./product.js";
 import Shop from "./shop.js";
-import ProductList from "./productList.js"; // Import ProductList here
+import ProductList from "./productList.js";
 
 class App {
   init() {
@@ -12,9 +12,8 @@ class App {
 
 const app = new App();
 app.init();
-
-// Assuming you have a reference to your ProductList instance
-const productList = new ProductList(/* Pass shoppingCart if needed */);
+const product = new Product();
+const productList = new ProductList(product);
 
 // Add event listeners to category cards
 document.getElementById("category-women").addEventListener("click", () => {

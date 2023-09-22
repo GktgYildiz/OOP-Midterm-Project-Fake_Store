@@ -1,16 +1,21 @@
 class ProductItem {
-  constructor(product, cart, descriptionOpen, productId, maxLines = 2) {
+  constructor(product, cart, descriptionOpen, productId) {
     this.product = product;
     this.cart = cart;
     this.descriptionOpen = false;
     this.productId = `product-${this.product.id}`;
-    this.maxLines = maxLines;
   }
-
+  //=====================
+  //Add product to cart
+  //=====================
   addToCart() {
     this.cart.addProduct(this.product);
-    console.log(this.cart);
+    console.log(this.product);
   }
+
+  //=====================
+  //handle description of the product --Toggle--
+  //=====================
   toggleDescription() {
     const descriptionToggle = document.querySelector(
       `#${this.productId}-description-text`
@@ -34,13 +39,17 @@ class ProductItem {
   }
 
   render() {
+    //capitalize the first char of category text
     const capitalizedCategory =
       this.product.category.charAt(0).toUpperCase() +
       this.product.category.slice(1);
+
+    //=====================
+    //create product cards
+    //=====================
     const productElement = document.createElement("div");
     productElement.classList.add(`product-item`);
     productElement.classList.add(`product-item-${this.product.id}`);
-
     productElement.innerHTML = `
     <div class='product-image-frame'> 
     <img class='product-image' src="${this.product.image}" alt="${this.product.title}" />
@@ -71,12 +80,14 @@ class ProductItem {
     const titleElement = productElement.querySelector(
       `#${this.productId}-title`
     );
-    titleElement.classList.add(
-      "truncate-text",
-      `truncate-text-${this.maxLines}`
-    );
+    //truncate title element to 2 lines
+    titleElement.classList.add("truncate-text");
+
+    //add the product to the cart when cart icon that on the product card clicked
     const addtocartButton = productElement.querySelector(".product-addToCart");
     addtocartButton.addEventListener("click", () => this.addToCart());
+
+    //call toggleDescription() method
     const descriptionButton = productElement.querySelector(
       `#${this.productId}-description-text`
     );
@@ -84,6 +95,10 @@ class ProductItem {
     return productElement;
   }
 }
+
+//=====================
+//GSAP Animations for category cards
+//=====================
 function addHoverAnimations() {
   const categoryCards = document.querySelectorAll(".choose-category");
 

@@ -303,14 +303,12 @@ body {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
-.truncate-text-2 {
-  -webkit-line-clamp: 2; /* Adjust this value for the maximum number of lines */
-}
 .rotate-90deg {
   transform: rotate(-180deg);
-  transition: transform 0.5s ease; /* Adjust the duration and easing as needed */
+  transition: transform 0.5s ease;
 }
 .product-description {
   padding: 1em;
@@ -328,7 +326,6 @@ body {
   top: 20;
   right: 10px;
   width: 0px;
-  // height: 30px;
   background-color: #b5e85d;
   // overflow-y: auto;
   padding: 16px 22px;
@@ -365,10 +362,11 @@ body {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  grid-template-columns: 90px 200px 40px;
 }
 
 .side-panel-item-image {
-  max-width: 80px; // Set the desired max width for the item image
+  max-width: 80px;
   margin-right: 16px;
 }
 
@@ -396,19 +394,32 @@ body {
   font-size: 16px;
 }
 
-// Add styles for the buttons (add, remove, and remove from cart)
-.side-panel-item button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  margin: 0 4px;
+.side-panel-item {
+  .add-item,
+  .remove-item {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 4px;
+  }
 }
-
-// Style the total price
 .side-panel-total {
   margin-top: 16px;
   font-size: 20px;
   font-weight: bold;
   text-align: right;
+}
+.remove-from-cart {
+  display: flex;
+  font-family: "FontAwesome";
+  font-size: 1em;
+  color: darkred;
+  border: none;
+  padding: 10px;
+  background: transparent;
+  justify-content: center;
+  position: relative;
+  right: -0.9em;
+  top: -3.5em;
 }

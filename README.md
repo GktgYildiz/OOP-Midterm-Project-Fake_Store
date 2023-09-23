@@ -14,15 +14,15 @@
 
 ## Filter By Category
 
-<video src='assets/styles/images/githubImages/1filtering.mov'/>
+![Category](assets/styles/images/filtering.gif)
 
 ## Add to Cart
 
-<video src='assets/styles/images/githubImages/3addingcart.mov'/>
+![add to cart](assets/styles/images/githubImages/3addingcart.gif)
 
 ## Cart
 
-<video src='assets/styles/images/githubImages/4cart.mov'/>
+![Cart](assets/styles/images/githubImages/4cart.gif)
 
 ## Description of product
 

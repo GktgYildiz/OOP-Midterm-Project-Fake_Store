@@ -14,19 +14,19 @@
 
 ## Filter By Category
 
-[Category Filtering](assets/styles/images/githubImages/1filtering.mov)
+<video src='assets/styles/images/githubImages/1filtering.mov'/>
 
 ## Add to Cart
 
-[add to cart](assets/styles/images/githubImages/3addingcart.mov)
+<video src='assets/styles/images/githubImages/3addingcart.mov'/>
 
 ## Cart
 
-[Cart](assets/styles/images/githubImages/4cart.mov)
+<video src='assets/styles/images/githubImages/4cart.mov'/>
 
 ## Description of product
 
-![description](assets/styles/images/githubImages/5description.png)
+<img src='assets/styles/images/githubImages/5description.png' height=300/>
 
 ## Below you can find the directives given by CICCC
 

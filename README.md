@@ -1,5 +1,35 @@
 # Mid Term - Fake Shop
 
+## DONE ✅
+
+## The finished images of the project are as follows.
+
+### Project Schema drawen by Goktug YILDIZ
+
+![Data Flow](assets/styles/images/githubImages/dataFlow.png)
+
+## Home Page
+
+![Home Page](assets/styles/images/githubImages/1mainpage.png)
+
+## Filter By Category
+
+[Category Filtering](assets/styles/images/githubImages/1filtering.mov)
+
+## Add to Cart
+
+[add to cart](assets/styles/images/githubImages/3addingcart.mov)
+
+## Cart
+
+[Cart](assets/styles/images/githubImages/4cart.mov)
+
+## Description of product
+
+![description](assets/styles/images/githubImages/5description.png)
+
+## Below you can find the directives given by CICCC
+
 ## Description
 
 In this project, you will create a fake shop using OOP. You will create classes for each entity and use them to create the shop.
